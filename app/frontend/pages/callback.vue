@@ -1,0 +1,19 @@
+<template>
+  <p>Signing in...</p>
+</template>
+
+<script>
+export default {
+  // http://localhost:3333/callback#
+  // access_token=yvonP0oph3FMw6bOvE-Y96bJJUFQ9ADt
+  // &scope=openid%20profile%20email
+  // &expires_in=7200
+  // &token_type=Bearer
+  // &state=ayKejbFfXV3MGzTw0pwVqfuskA~5Ydkk
+  // &id_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtKUkJUUHpaWHBEbkFGOHB0Mm1NeSJ9.eyJnaXZlbl9uYW1lIjoiVGF0c3VoaWtvIiwiZmFtaWx5X25hbWUiOiJzZWtpIiwibmlja25hbWUiOiJvc2VraWhhcm4iLCJuYW1lIjoiVGF0c3VoaWtvIHNla2kiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKeVNpRnBIMmJYc1F6dm1hdUp1M0REMXQ3N25CTmthR0ZsZUNEN3o9czk2LWMiLCJsb2NhbGUiOiJlbiIsInVwZGF0ZWRfYXQiOiIyMDIxLTA3LTA1VDE1OjQzOjQ4LjM4OFoiLCJlbWFpbCI6Im9zZWtpaGFybkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9kZXYtMGlvODdtMHMuanAuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MTQzODUyMDMzMzA1MzEyNDAwIiwiYXVkIjoiOG5RYkMwN0VCZlZKMGIwZkdySGxCUXdoYnZvbUFHQmciLCJpYXQiOjE2MjU0OTk4MjgsImV4cCI6MTYyNTUzNTgyOCwiYXRfaGFzaCI6IjBmdUNxN3ctdzBKY3ZIcm9udTBVNXciLCJub25jZSI6IkFKQzkwTkhpeVNRdU13d2p3MGxBLkZYUWo1R19-cHZLIn0.bV7ksZskM_IEYOoCdr0I8aU4q44bS-jibGPBxBpJ14r8TXbDc9I7F7_FXGn4uX5dF83209_Xwq_YalxEJPItfaDGc8XoRjNE4WMO1g4u59gSgJS7yZSO6HFYS6P4zMKuuR8ahehHp0eJCHt4l8yAg-_5Vv0V0k0IZmF9rt7i6bfr4lUlim_8VeQ0xBmpfc2ignrUvNwX6rMX-AIt0L0OIk8g-kTCyBVZEAMLMNF58KhmIpGfYC-A2ind8pGcrU_NjvA640sDyEGNBKLYA-uKS_j5npY1YlQztG7OK_doO9p-ecUMJlgtEswdoyTr35hke-UD_TyRuki4g6duo8Soeg
+  mounted() {
+    this.$auth0.setTokenByQuery()
+    this.$router.replace('/')
+  }
+}
+</script>
