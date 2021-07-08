@@ -5,6 +5,6 @@
       "yarn": "1.22.10"
   },
   "scripts": {
-      "postinstall": "cd frontend && yarn install && yarn build"
+      "postinstall": "cd app/frontend && yarn install && yarn build"
   }
 }
